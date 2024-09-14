@@ -1,0 +1,84 @@
+body {
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Search Bar Container */
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+}
+
+/* Input Field Styling */
+.search-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 2px solid #ff6b6b;
+  outline: none;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ffba00;
+  background-color: #fff;
+}
+
+/* Suggestions List Styling */
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-list li {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+
+.suggestions-list li:hover {
+  background-color: #03045e;
+  color: #fff;
+}
+
+/* Headings and Titles */
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Bar Animation on Hover */
+.search-bar:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
